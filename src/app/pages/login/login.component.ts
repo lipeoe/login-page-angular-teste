@@ -6,14 +6,12 @@ import { Route, Router } from '@angular/router';
 import { LoginService } from '../../services/login.service';
 import { ToastrService } from 'ngx-toastr';
 
-<<<<<<< HEAD
-=======
 interface LoginForm{
   email: FormControl,
   password: FormControl
 }
 
->>>>>>> a6fd57c (Mensagem de commit)
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -30,11 +28,9 @@ interface LoginForm{
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-<<<<<<< HEAD
-  loginForm!: FormGroup;
-=======
+
   loginForm!: FormGroup<LoginForm>;
->>>>>>> a6fd57c (Mensagem de commit)
+
 
   constructor(
     private router: Router,
@@ -54,10 +50,6 @@ export class LoginComponent {
     })
   }
   navigate(){
-<<<<<<< HEAD
-    this.router.navigate(["/signup"])
-=======
     this.router.navigate(["signup"])
->>>>>>> a6fd57c (Mensagem de commit)
   }
 }
